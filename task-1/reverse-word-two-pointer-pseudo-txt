@@ -1,0 +1,22 @@
+Reverse Word Program with Two Pointer Algorith.
+    DECLARE s : String
+    DECLARE left, right : Number
+    DECLARE c : Array of Characters
+    DECLARE temp : Character
+
+BEGIN
+    INPUT s
+    left = 0
+    right = LENGTH(s) - 1
+    c = SPLIT(s)
+    
+    WHILE left < right DO
+        temp = c[left]
+        c[left] = c[right]
+        c[right] = temp
+        left = left + 1
+        right = right - 1
+    END WHILE
+
+    PRINT JOIN(c)
+END

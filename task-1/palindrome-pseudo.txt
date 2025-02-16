@@ -1,0 +1,17 @@
+Program Mengecek Palindrom
+
+DECLARE word, reverseWord AS String
+
+BEGIN
+    IF type(word) IS NOT "string" THEN
+        PRINT "Input harus String"
+    ELSE
+        reverseWord = JOIN(REVERSE(SPLIT(word)))
+        IF reverseWord = word THEN
+            PRINT "Palindrom"
+        ELSE
+            PRINT "Bukan Palindrom"
+        END IF
+    END IF
+END
+
