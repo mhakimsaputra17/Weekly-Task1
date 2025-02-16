@@ -1,9 +1,7 @@
 Reverse Word Program with Two Pointer Algorith.
     DECLARE s : String
     DECLARE left, right : Number
-    DECLARE c : Array of Characters
-    DECLARE temp : Character
-
+    DECLARE c : Array
 BEGIN
     INPUT s
     left = 0
@@ -11,9 +9,7 @@ BEGIN
     c = SPLIT(s)
     
     WHILE left < right DO
-        temp = c[left]
-        c[left] = c[right]
-        c[right] = temp
+        c[left]c[right] = c[right]c[left]
         left = left + 1
         right = right - 1
     END WHILE
